@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'League Spartan';
+    transition: all 0.5s ease;
+}
+
+body{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+    font-size: 15px;
+    color: hsl(300, 43%, 22%);
+    padding: 50px 40px;
+    position: relative;
+}
+main{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+    max-width: 1050px;
+}
+
+main section{
+    flex: 1;
+}
+main .testimonies{
+    flex: 100%;
+}
+
+.text-main h1{
+    font-size: 50px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    line-height: normal;
+    padding-right: 30%;
+}
+
+.text-main p{
+    line-height: 1.5rem;
+    padding-right: 30%;
+    font-weight: 500;
+}
+
+.ratings{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 15px;
+    position: relative;
+}
+
+.ratings .rating{
+    padding: 20px;
+    width: 400px;
+    border-radius: 10px;
+    background-color: hsl(290, 30%, 96%);
+}
+
+.rating:nth-of-type(1){
+    position: relative;
+    left: -20%;
+}
+
+.rating:nth-of-type(2){
+    position: relative;
+    left: -10%;
+}
+
+.ratings .stars{
+    display: inline;
+    font-size: 20px;
+    color: hsl(28, 86%, 59%);
+    font-size: 1em;
+    margin-right: 10px;
+}
+
+.ratings .rating{
+    font-weight: 700;
+}
+
+.testimonies{
+    display: flex;
+    gap: 30px;
+}
+
+.testimonies .testimony{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 25px 15px;
+    padding: 40px 30px;
+    background-color: #daba03;
+    color: white;
+    border-radius: 10px;
+    background-color: hsl(301, 45%, 22%);
+}
+
+.testimonies .testimony h3{
+    font-size: 1rem;
+}
+
+.testimonies .testimony h3 span{
+    margin-top: 5px;
+    display: block;
+    color: hsl(333, 80%, 67%);
+    font-size: 1rem;
+}
+
+.testimonies .testimony p{
+    flex: 100%;
+    line-height: 1.2rem;
+    font-weight: 500;
+}
+
+.testimonies .testimony img{
+    border-radius: 50%;
+    width: 50px;
+}
+
+.testimonies .testimony:first-of-type{
+    position: relative;
+    top: -10px;
+    flex: 1;
+}
+
+.testimonies .testimony:nth-of-type(2){
+    flex: 1;
+    position: relative;
+
+}
+
+.testimonies .testimony:nth-of-type(3){
+    position: relative;
+    bottom: -10px;
+    flex: 1;
+}
+
+
+@media screen and (max-width: 868px) {
+    body{
+        padding: 50px 30px;
+    }
+    main{
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .text-main h1, .text-main p{
+        padding: 0;
+        text-align: center;
+        margin: 0;
+    }
+
+    .text-main h1{
+        padding: 0 50px 20px;
+        font-size: 40px;
+    }
+
+    .ratings{
+        width: 100%;
+    }
+
+    .ratings .rating{
+        width: 100%;
+        text-align: center;
+        position: static;
+    }
+
+    .testimonies{
+        flex-direction: column;
+        gap: 20px; 
+    }
+
+    .testimonies .testimony{
+        position: static;
+    }
+
+
+}
+
+@media screen and (max-width: 425px) {
+    body{
+        padding: 50px 20px;
+    }
+    .text-main h1{
+        font-size: 34px;
+        line-height: normal
+    }
+
+    .ratings .rating .stars{
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    .ratings .rating{
+        padding: 10px;
+    }
+}
+
+.attribution {
+    color: black;
+    font-size: 11px;
+    text-align: center;
+    position: absolute;
+    bottom: 20px;
+}
+
+.attribution a {
+    color: hsl(301, 45%, 22%);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.attribution a:hover{
+    text-decoration: underline;
+}
